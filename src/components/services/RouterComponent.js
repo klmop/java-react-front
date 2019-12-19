@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import ListUserComponent from "../users/ListUserComponent";
 import AddUserComponent from "../users/AddUserComponent";
 import EditUserComponent from "../users/EditUserComponent";
@@ -7,7 +7,7 @@ import React from "react";
 const AppRouter = () => {
     return(
         <div>
-            <Router>
+            <BrowserRouter>
                 <div>
                     <h1 className="App-header col-xs-12" style={style}>React User App</h1>
                     <Switch>
@@ -17,7 +17,7 @@ const AppRouter = () => {
                         <Route path="/edit-user" component={EditUserComponent} />
                     </Switch>
                 </div>
-            </Router>
+            </BrowserRouter>
         </div>
     )
 }
