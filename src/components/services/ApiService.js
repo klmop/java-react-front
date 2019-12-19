@@ -4,7 +4,7 @@ import axios from 'axios';
  * TODO : 1 : Modifier ce champ afin que l'adresse du serveur backend
  * ne soit plus envoyer en dur au client.
  */
-const USER_API_BASE_URL = 'http://192.168.1.11:8080/users'; 
+const USER_API_BASE_URL = 'http://192.168.1.11:8080/users2'; 
 
 class ApiService {
 
