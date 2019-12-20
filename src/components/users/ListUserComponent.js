@@ -68,14 +68,12 @@ export default class ListUserComponent extends Component {
                                 <td>{user.username}</td>
                                 <td>{user.age}</td>
                                 <td>{user.salary}</td>
-                                <tr>
-                                    <td>
-                                        <button className="btn btn-danger" onClick={() => this.deleteUser(user.id)} >Supprimer</button>
-                                    </td>
-                                    <td>
-                                        <button className="btn btn-success" onClick={() => this.editUser(user.id)} >Editer</button>
-                                    </td>
-                                </tr>
+                                <td>
+                                    <button className="btn btn-danger" onClick={() => this.deleteUser(user.id)} >Supprimer</button>
+                                </td>
+                                <td>
+                                    <button className="btn btn-success" onClick={() => this.editUser(user.id)} >Editer</button>
+                                </td>
                             </tr>
                         )
                     }
